@@ -1,0 +1,33 @@
+---
+import Base from "@layouts/Base.astro";
+import RecentPosts from "@components/RecentPosts.astro";
+---
+
+<Base>
+  <article>
+    <header><h1>Hi :)</h1></header>
+    <p>
+      Welcome to my personal website!
+    </p>
+    <img src="image.jpg" style="width: 35vw;" alt="Self potrait of Jiejun in Shanghai">
+
+    <h2>About me</h2>
+    <p>
+      I'm a Computer Science with a Second Major in Business student at Nanyang Technological University (NTU) from Singapore. 
+      I have some experience in React / Next.js for the frontend and I've mostly done NodeJS for the server. I've also done a substantial amount of Python.
+      Currently, I'm looking into doing data science / AI roles
+    </p>
+    <h2>Resume:</h2>
+    <embed src="Jiejun's_Resume.pdf#view=FitH" style="width: 70vw; max-width: 100%; aspect-ratio: 595 / 842;" type="application/pdf">
+
+    <h2>Contact me</h2>
+      <div style="display: flex;gap: 5vw; align-items: center;">
+        <div><a href="https://linkedin.com/in/jiejun-chong"><img src="linkedin_icon.svg" class="contact-icon"/></a></div>
+          <div><a href="https://github.com/JJChong777"><img src="github_icon.svg" class="contact-icon"/></a></div>
+          <div><a href="mailto:jiejun815@gmail.com"></a><img src="email_icon.svg" class="contact-icon"/></a></div>
+      </div>
+
+  </article>
+  <hr />
+  <RecentPosts />
+</Base>
